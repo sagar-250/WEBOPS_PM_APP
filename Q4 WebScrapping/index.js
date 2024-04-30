@@ -100,5 +100,6 @@ fs.writeFile("data.json", dat, (error) => {
   if (error) {
     console.error(error);
     throw error;
-}});                       
+}});
+await browser.close();      
 })();
