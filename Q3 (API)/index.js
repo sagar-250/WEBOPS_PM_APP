@@ -42,12 +42,6 @@ app.get('/api/mess/:type/:order/:day/:time/:food',(req,res)=>{
     }
 
 })
-app.get('/about',(req,res)=>{
-   // res.send('about')
-//res.sendfile(path.join(__dirname,'index.html'))   
-res.json({"harry":19})
-})
-
 app.listen(port,()=>{
     console.log(`appListening at http://localhost:${port}`)
 })
